@@ -1,15 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+.adlam-display-regular {
+  font-family: "ADLaM Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style> -->
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- header starts here -->
+    <header class="bg-[#FFF9F4]">
+
+        <nav class="flex justify-around items-center py-3">
+            <div class="flex items-center">
+                <img src="c1-assets/logo-header.png" alt="logo-header">
+                <h4 class="pl-2 text-2xl">Browse <span class="text-yellow-400">4</span>Pets</h4>
+            </div>
+            <div>
+                <ul class="flex items-center gap-5 text-xl font-normal">
+                    <li>Find a pet</li>
+                    <li>Breeds</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2">
+                    <img src="c1-assets/bell.png" alt="bell">
+                    <img src="c1-assets/search.png" alt="search">
+                </div>
+                <div class="flex">
+                    <button class="border border-yellow-400 rounded-lg py-1.5 px-4 mr-2">Login</button>
+                    <button class="bg-yellow-400 rounded-lg py-1.5 px-4 ml-2">Register</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header ends hear -->
+
+    <!-- main section starts here -->
+    <main>
+
+        <!-- hero section starts -->
+        <section class="container mx-auto  mt-20 mb-30 hero">
+            
+            <div class="w-1/2 mx-4 h-[90vh] ">
+                <h1 class="text-6xl font-bold my-4">
+                    Pamper Your Pet,<br>Because They Deserve<br>the Best
+                </h1>
+                <p class="text-[20px] my-4">
+                    Discover a world of treats, toys, and essentials handpicked for<br>your furry friends. Shop now and
+                    make tails wag with joy!
+                </p>
+                <button class="bg-yellow-400 py-2 px-8 rounded-lg text-lg my-2">Find a pet</button>
+            </div>
+            <!-- <img class=" container mx-auto absolute inset-0 -z-10 mt-[-100px]" src="c1-assets/cat-big.png" alt="cat-image"> -->
+        </section>
+<!-- hero section ends -->
+
+<!-- browse by categories starts -->
+    <section class="container mx-auto mb-[150px]">
+        <h2 class="text-4xl font-bold mb-8">Browse By Categories</h2>
+        <div class="flex gap-5 justify-between flex-wrap">
+            <div class="bg-[#F9DF8A] w-[220px] h-[254px] rounded-xl flex flex-col items-center justify-center">
+                <img class="rounded-full p-6 bg-white" src="c1-assets/dog-cartoon.png" alt="dog">
+                <h5 class="text-xl font-bold">Dog</h5>
+                <h6 class="text-sm font-bold">3 Items</h6>
+            </div>
+            <div class="bg-[#F9DF8A] w-[220px] h-[254px] rounded-xl flex flex-col items-center justify-center">
+                <img class="rounded-full p-6 bg-white" src="c1-assets/fish-cartoon.png" alt="fish">
+                <h5 class="text-xl font-bold">Fish</h5>
+                <h6 class="text-sm font-bold">3 Items</h6>
+            </div>
+            <div class="bg-[#F9DF8A] w-[220px] h-[254px] rounded-xl flex flex-col items-center justify-center">
+                <img class="rounded-full p-6 bg-white" src="c1-assets/cat-cartoon.png" alt="cat">
+                <h5 class="text-xl font-bold">Cat</h5>
+                <h6 class="text-sm font-bold">3 Items</h6>
+            </div>
+            <div class="bg-[#F9DF8A] w-[220px] h-[254px] rounded-xl flex flex-col items-center justify-center">
+                <img class="rounded-full p-6 bg-white" src="c1-assets/bird-cartoon.png" alt="birds">
+                <h5 class="text-xl font-bold">Birds</h5>
+                <h6 class="text-sm font-bold">3 Items</h6>
+            </div>
+            <div class="bg-[#F9DF8A] w-[220px] h-[254px] rounded-xl flex flex-col items-center justify-center">
+                <img class="rounded-full p-6 bg-white" src="c1-assets/mouse-cartoon.png" alt="mouse-cartoon">
+                <h5 class="text-xl font-bold">small pet</h5>
+                <h6 class="text-sm font-bold">3 Items</h6>
+            </div>
+            <div class="bg-[#F9DF8A] w-[220px] h-[254px] rounded-xl flex flex-col items-center justify-center">
+                <img class="rounded-full p-6 bg-white" src="c1-assets/rabbit-cartoon.png" alt="rabit">
+                <h5 class="text-xl font-bold">Rabit</h5>
+                <h6 class="text-sm font-bold">3 Items</h6>
+            </div>
+        </div>
+    </section>
+    <!-- browse by categories ends -->
+
+    <!-- trending pet products start -->
+    <section class="w-full bg-[#FFF9F4] py-10">
+        <h2 class="container mx-auto mx-auto text-4xl font-bold mb-8">Trending Pet Products</h2>
+        <div class="w-4/5 mx-auto flex items-center">
+        <div class="bg-[#F9DF8A] w-2/5 pl-8 py-12 rounded-md">
+            <h2 class="text-3xl font-bold">T-Shirt For Dogs</h2>
+            <p>Discover a world of treats,toys, and essentials handpicked for</p>
+            <button class="py-2 px-8 rounded-lg text-lg my-2">Shop Now</button>
+            <img class="w-[150px]" src="c1-assets/cute-pet-mid.png" alt="dog">
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl flex">
+                <!-- <img class="p-2  bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog"> -->
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl flex">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
+            <div class="w-[250px] h-[150] py-2 px-4 border rounded-xl">
+                <img class="p-2 border bg-white rounded-lg w-2/4" src="c1-assets/dog-cartoon.png" alt="dog">
+                <div>
+                <img class="inline-block" src="c1-assets/star.png" alt="star-icon">
+                <h4 class="inline">4.5</h4>
+                <h2>Pet Bed</h2>
+                <p>$39.99</p>
+                </div>
+            </div>
 
 
-    
+</div>
+
+
+    </div>
+    </section>
+    <!-- trending pet products ends -->
+
+
+
+
+    </main>
+    <!-- main section ends here -->
+    <footer></footer>
+
+
 </body>
+
 </html>
