@@ -19,35 +19,55 @@
 </head>
 
 <body>
-
-    <!-- header starts here -->
-    <header class="bg-[#FFF9F4]">
-
-        <nav class="flex justify-around items-center py-3">
+    
+    <header class="bg-[#FFF9F4] ">
+        <nav class="container mx-auto flex justify-between items-center px-4 py-3 md:px-10">
+            <!-- Logo -->
             <div class="flex items-center">
-                <img src="c1-assets/logo-header.png" alt="logo-header">
-                <h4 class="pl-2 text-2xl">Browse <span class="text-yellow-400">4</span>Pets</h4>
+                <img src="c1-assets/logo-header.png" alt="logo-header" class="w-10 h-10">
+                <h4 class="pl-2 text-xl md:text-2xl">Browse<span class="text-yellow-400">4</span>Pets</h4>
             </div>
-            <div>
-                <ul class="flex items-center gap-5 text-xl font-normal">
-                    <li>Find a pet</li>
-                    <li>Breeds</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-
-            <div class="flex items-center gap-2">
+    
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <img src="c1-assets/hamburger.png" alt="menu" class="w-8 h-8">
+            </button>
+    
+            <!-- Navigation Links -->
+            <ul id="menu" class="hidden md:flex items-center gap-5 text-lg font-normal">
+                <li>Find a pet</li>
+                <li>Breeds</li>
+                <li>Contact us</li>
+            </ul>
+    
+            <!-- Icons & Buttons -->
+            <div class="hidden md:flex items-center gap-4">
                 <div class="flex items-center gap-2">
-                    <img src="c1-assets/bell.png" alt="bell">
-                    <img src="c1-assets/search.png" alt="search">
+                    <img src="c1-assets/bell.png" alt="bell" class="w-6 h-6">
+                    <img src="c1-assets/search.png" alt="search" class="w-6 h-6">
                 </div>
                 <div class="flex">
-                    <button class="border border-yellow-400 rounded-lg py-1.5 px-4 mr-2">Login</button>
+                    <button class="border border-yellow-400 rounded-lg py-1.5 px-4">Login</button>
                     <button class="bg-yellow-400 rounded-lg py-1.5 px-4 ml-2">Register</button>
                 </div>
             </div>
         </nav>
+    
+      
+        <div id="mobile-menu" class="hidden flex flex-col peer-checked:flex items-center space-y-4 py-4 bg-[#FFF9F4] md:hidden">
+            <a href="#" class="text-lg">Find a pet</a>
+            <a href="#" class="text-lg">Breeds</a>
+            <a href="#" class="text-lg">Contact us</a>
+            <div class="flex gap-2">
+                <button class="border border-yellow-400 rounded-lg py-1.5 px-4">Login</button>
+                <button class="bg-yellow-400 rounded-lg py-1.5 px-4">Register</button>
+            </div>
+        </div>
     </header>
+    
+
+
+
     <!-- header ends hear -->
 
     <!-- main section starts here -->
@@ -57,10 +77,10 @@
         <section class="container mx-auto  mt-20 mb-30 hero">
 
             <div class="w-1/2 mx-4 h-[90vh] ">
-                <h1 class="text-6xl font-bold my-4">
+                <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold my-4">
                     Pamper Your Pet,<br>Because They Deserve<br>the Best
                 </h1>
-                <p class="text-[20px] my-4">
+                <p class="text-base sm:text-xl-lg md:text-xl lg:text-2xl text-[20px] my-4">
                     Discover a world of treats, toys, and essentials handpicked for<br>your furry friends. Shop now and
                     make tails wag with joy!
                 </p>
@@ -121,7 +141,8 @@
                         alt="dog">
                 </div>
 
-                <div class="grid grid-cols-3 gap-5 mx-5">
+                <!-- <div class="grid grid-cols-3 md:grid-rows-1 gap-5 mx-5"> -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full">
                     <div class="w-[350px] h-[150] py-2 px-4 border rounded-xl flex bg-white">
                         <!-- <img class="p-2  bg-white rounded-lg size-20" src="c1-assets/dog-cartoon.png" alt="dog"> -->
                         <img class="p-2 border bg-[#FFF9F4] rounded-lg size-20 " src="c1-assets/dog-cartoon.png"
@@ -243,7 +264,7 @@
                     class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] w-[550px] h-[380px] px-5 pt-10  rounded-md relative">
                     <h2 class="text-2xl font-bold mb-5">T-Shirt For Dogs</h2>
                     <h1 class="text-4xl font-bold">$7.99</h1>
-                    <img class="w-[200px] absolute bottom-0 right-10 " src="c1-assets/cute-pet-mid.png" alt="dog">
+                    <img class="w-[250px] absolute bottom-0 right-10 " src="c1-assets/cute-pet-mid.png" alt="dog">
                 </div>
 
             </div>
